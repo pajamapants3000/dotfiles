@@ -1,0 +1,103 @@
+"
+" %AA_ONEDRIVE%\vimfiles\_vsvimrc
+" Configuration for VsVim - Vim emulation for MS Visual Studio
+"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+
+"**********************************************************"
+" List of supported settings; reference:
+"   https://github.com/jaredpar/VsVim/wiki/Settings-Reference
+
+" Global Settings
+"^^^^^^^^^^^^^^^^^
+" vsvim_autocmd - toggle - enable running auto commands
+"   (also requires  novsvim_useeditordefaults )
+" backspace - string list - indent, eol, and/or start supported
+" vsvimcaret - number - opacity of caret block 0-100
+" vsvim_controlchars - toggle - see ctrl chars or whitespace
+" cdpath - string
+" clipboard - string - one of:
+"   unnamed, autoselect, autoselectml 
+" hlsearch - toggle
+" history - number
+" ignorecase - toggle
+" incsearch - toggle
+" joinspaces - toggle
+" keymodel - string
+" magic - toggle
+" vsvim_maxmapcount - number
+" maxmapdepth - number
+" mousemodel - string
+"   supports: extend, popup, popup_setpos
+"   popup - I think
+"   popup_setpos - I think
+" paragraphs - string
+" path - string
+" scrolloff - number
+" sections - string
+" selection - string
+"   supported: inclusive, exclusive
+" selectmode - string
+"   supported: mouse, key
+"   not supported: cmd
+" shell - string
+" shellcmdflag - string
+" smartcase - toggle
+" startofline - toggle
+" tildeop - toggle
+" ttimeout - toggle
+" timeout - toggle
+" timeoutlen - number
+" ttimeoutlen - number
+" vsvim_useeditorindent - toggle
+" vsvim_useeditordefaults - toggle
+" visualbell - toggle
+" virtualedit - string
+"   supported: onemore  
+" vimrc - string
+" vimrcpaths - string
+" whichwrap - string list - supported options:
+"   b (N,V <BS>), s (N,V <Space>), h, l
+"   < (N,V <Left>), > (N,V <Right>)
+"   [ (I,R <Left>), ] (I,R <Right>)
+"   ~ not yet supported
+" wrapscan - toggle
+
+" Local Settings
+"^^^^^^^^^^^^^^^^
+" autoindent - toggle
+" expandtab - toggle
+" number - toggle
+" nrformats - string
+" shiftwidth - number
+" tabstop - number
+" quoteescape - string
+
+" Window Settings
+"^^^^^^^^^^^^^^^^^
+" cursorline - toggle
+" scroll - number
+
+" AutoCommands
+"^^^^^^^^^^^^^^
+" Supported: BufEnter, BufWinEnter, BufWinLeave, FileType
+
+"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+
+"*** Option settings ***"
+"set novsvim_autocmd - must also set vsvim_useeditordefaults
+set backspace=indent,eol,start
+set vsvimcaret=30
+"set novsvim_controlchars 
+"set cdpath=.
+set clipboard=autoselect
+set expandtab
+set incsearch
+set number
+
+"*** Mappings ***"
+" Quick-escape/normal-mode
+inoremap jj <Esc>
+
+"*** AutoCommands ***"
+
+" End _vsvimrc

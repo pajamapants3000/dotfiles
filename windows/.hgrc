@@ -1,0 +1,28 @@
+[ui]
+username = Tommy Lincoln <pajamapants3000@gmail.com>
+editor = vim
+
+# *nix-specific settings
+
+# Windows-specific settings
+# NOTE: First time, simply run e.g.:
+# 	"C:\Program Files\PuTTY\plink.exe" -ssh -2 ssh://hg@www.bitbucket.org
+# 	This will simply prompt you to save the connection as known,
+# 	after which hg will work for SSH
+#ssh = "C:\Program Files\PuTTY\plink.exe" -ssh -2 -batch -C
+
+ignore=C:\Users\Tommy\_hgignore
+[auth]
+bb-pj3k.prefix = https://bitbucket.org/pajamapants3000/
+bb-pj3k.username = pajamapants3000
+bb-pj3k.schemes = http https
+
+[paths]
+softphone = https://pajamapants3000@bitbucket.org/pajamapants3000/softphone-installer
+LFS = https://pajamapants3000@bitbucket.org/pajamapants3000/lfs_scripts
+toms = https://pajamapants3000@bitbucket.org/pajamapants3000/tommy_toms
+
+[alias]
+pj3k: = https://bitbucket.org/pajamapants3000/
+[extensions]
+eol=
